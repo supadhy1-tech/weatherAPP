@@ -1,0 +1,130 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('blue_sky.jpg');
+    background-size: cover;
+    background-blend-mode: lighten;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+.container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Styling */
+input[type="text"] {
+    padding: 12px;
+    width: calc(100% - 24px);
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #5478ff;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #5478ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #415acb;
+}
+
+/* Weather Info Card */
+.weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f7f9fc;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.weather-info h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 6px 0;
+    color: #555;
+}
+
+/* Weather Icon Styling */
+.weather-info img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.weather-info p strong {
+    font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .weather-info h2 {
+        font-size: 20px;
+    }
+
+    .weather-info p {
+        font-size: 16px;
+    }
+}
